@@ -19,9 +19,17 @@ elif operation == '-':
 elif operation == '*':
     print(first_value*second_value)
 elif operation == '/':
-    print(first_value/second_value)
+    if second_value == 0:
+        print('division by zero')
+        sys.exit(0)
+    else:
+        print(first_value/second_value)
 elif operation == '//':
-    print(first_value//second_value)
+    if second_value == 0:
+        print('division by zero')
+        sys.exit(0)
+    else:
+        print(first_value//second_value)
 elif operation == '**':
     print(first_value**second_value)
 else:
